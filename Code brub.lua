@@ -1,5 +1,4 @@
-print("Сделано от T1 и SKWERKIN")
-
+loadstring(game:HttpGet('https://raw.githubusercontent.com/t1hub2/Brub/refs/heads/main/%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82%D1%8B))()
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "T1 hub / Первый русский скрипт",

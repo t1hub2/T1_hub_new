@@ -34,7 +34,8 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-Name = "Банка мочи",
+local Button = Tab:CreateButton({
+   Name = "Банка мочи",
    Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/refs/heads/main/StarJug.lua"))() 
    end,

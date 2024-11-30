@@ -33,10 +33,10 @@ local Window = Rayfield:CreateWindow({
       Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
-
+local Tab = Window:CreateTab("Items",4483362458) -- Title, Image
 local Button = Tab:CreateButton({
-   Name = "Банка мочи",
-   Callback = function()
+  Name = "Банка Мочи",
+  Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/refs/heads/main/StarJug.lua"))() 
-   end,
+    end    
 })

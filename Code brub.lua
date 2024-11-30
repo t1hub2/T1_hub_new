@@ -48,7 +48,7 @@ Name = "Синий портал (не работает на телефонах",
 local Button = Tab:CreateButton({
    Name = "Золотой шейклайт",
    Callback = function()
-    loadstring(game:HttpGet(("https://raw.githubusercontent.com/aadyian9000/the-thing/main/GoldenGummyFlashlight.lua"),true))() 
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/aadyian9000/the-thing/main/GoldenGummyFlashlight.lua"))() 
    end,
 })
 local Tab = Window:CreateTab("Монстры",13143005702)

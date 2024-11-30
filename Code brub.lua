@@ -9,7 +9,7 @@ OrionLib:MakeNotification({
  Content = "Все скрипты взяты из Legit mods offical discord! Даня не убивай меня :(",
  Image = "rbxassetid://4483345998",
  Time = 5
-
+})
 local Tab = Window:MakeTab({
 Name = "Предметы / Скрипты",
 Icon = "rbxassetid://4483345998",

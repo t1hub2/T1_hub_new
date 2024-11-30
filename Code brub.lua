@@ -40,13 +40,6 @@ local Button = Tab:CreateButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/refs/heads/main/StarJug.lua"))() 
     end    
 })
-
-Name = "Синий портал (не работает на телефонах",
-   Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/HT8jgqAY"))()
-   end,
-})
-
 local Tab = Window:CreateTab("Монстры",13143005702)
 local Button = Tab:CreateButton({
    Name = "Заспавни Пандениона",

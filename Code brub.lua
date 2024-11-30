@@ -46,10 +46,50 @@ local Button = Tab:CreateButton({
     loadstring(game:HttpGet("https://pastebin.com/raw/HT8jgqAY"))()
    end,
 })
+Name = "Банка воды",
+   Callback = function()
+    loadstring(game:HttpGet('https://gist.githubusercontent.com/IdkMyNameLoll/04d7dd5e02688624b958b8c2604b924c/raw/9e86b34249f44ed2dd433176e67daaf3db30cde8/MoonBottle'))() 
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Сикибиди пушка",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/seekgun.lua"))() 
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Бомба ракета 2007",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/rocketLauncher.lua"))()
+   end,
+})
+Name = "Черная дыра",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Black%20Hole.lua"))() 
+   end,
+})
 local Tab = Window:CreateTab("Монстры",13143005702)
 local Button = Tab:CreateButton({
    Name = "Заспавни Пандениона",
    Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/DripCapybara/Doors-Mode-Remakes/refs/heads/main/PandemoniumProtected.lua"))()  
+   end,
+})
+local Tab = Window:CreateTab("Читы",4483362458)
+local Button = Tab:CreateButton({
+   Name = "Мс паинт v3 (не обновляется)",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()
+   end,
+})
+local Tab = Window:CreateTab("Моды",4483362458)
+Name = "Жуткий мод",
+   Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Anzor5458/Mode/refs/heads/main/Creepy%20mode'))() 
+   end,
+})
+Name = "Хард мод +5 монстров",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/DripCapybara/Doors-Mode-Remakes/refs/heads/main/HardcoreFixed.lua"))() 
    end,
 })

@@ -40,3 +40,9 @@ local Button = Tab:CreateButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/refs/heads/main/StarJug.lua"))() 
     end    
 })
+local Button = Tab:CreateButton({
+   Name = "Заспавни Пандениона",
+   Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/DripCapybara/Doors-Mode-Remakes/refs/heads/main/PandemoniumProtected.lua"))() 
+   end,
+})

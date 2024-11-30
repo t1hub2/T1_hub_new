@@ -1,4 +1,20 @@
-loadstring(game:HttpGet('https://raw.githubusercontent.com/t1hub2/Brub/refs/heads/main/%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82%D1%8B))()
+print("Сделано от T1 и SKWERKIN")
+local player = game.Players.LocalPlayer
+local screenGui = Instance.new("ScreenGui")
+local textLabel = Instance.new("TextLabel")
+
+screenGui.Parent = player:WaitForChild("PlayerGui")
+textLabel.Parent = screenGui
+textLabel.Text = "Сделано от T1 и SKWERKIN"
+textLabel.Size = UDim2.new(0, 400, 0, 300)
+textLabel.Position = UDim2.new(0.5, -200, 0.5, -50)
+textLabel.TextColor3 = Color3.new(1, 1, 1)
+textLabel.BackgroundTransparency = 1
+textLabel.Font = Enum.Font.SourceSans
+textLabel.TextSize = 100
+
+wait(10) 
+textLabel.Visible = false
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "T1 hub / Первый русский скрипт",

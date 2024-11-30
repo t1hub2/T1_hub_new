@@ -1,6 +1,3 @@
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Сделано от T1 и Lexuer",true)
-game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-wait(1)
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "T1 hub / Первый русский скрипт",

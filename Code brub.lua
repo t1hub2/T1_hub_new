@@ -1,27 +1,11 @@
 print("Сделано от T1 и SKWERKIN")
-local player = game.Players.LocalPlayer
-local screenGui = Instance.new("ScreenGui")
-local textLabel = Instance.new("TextLabel")
-
-screenGui.Parent = player:WaitForChild("PlayerGui")
-textLabel.Parent = screenGui
-textLabel.Text = "Сделано от T1 и SKWERKIN"
-textLabel.Size = UDim2.new(0, 400, 0, 300)
-textLabel.Position = UDim2.new(0.5, -200, 0.5, -50)
-textLabel.TextColor3 = Color3.new(1, 1, 1)
-textLabel.BackgroundTransparency = 1
-textLabel.Font = Enum.Font.SourceSans
-textLabel.TextSize = 100
-
-wait(10) 
-textLabel.Visible = false
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "T1 hub / Первый русский скрипт",
    Icon = 129826331604126, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "Загрузка",
    LoadingSubtitle = "T1",
-   Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+   Theme = "Bloom", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    DisableRayfieldPrompts = false,
    DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
@@ -49,18 +33,31 @@ local Window = Rayfield:CreateWindow({
       Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
-local Tab = Window:CreateTab("предметы",4483362458) -- Title, Image
+Rayfield:Notify({
+   Title = "Предупреждение",
+   Content = "Все скрипты были взяты из Legit mods offical discord! Даня не убивай меня :(",
+   Duration = 6.5,
+   Image = 4483362458,
+})
+local Tab = Window:CreateTab("предметы",12771221110) -- Title, Image
 local Button = Tab:CreateButton({
   Name = "Банка Мочи",
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/refs/heads/main/StarJug.lua"))() 
-    end    
+    end,
 })
 local Button = Tab:CreateButton({
    Name = "Синий портал (не работает на телефонах",
    Callback = function()
     loadstring(game:HttpGet("https://pastebin.com/raw/HT8jgqAY"))()
    end,
+})
+
+local Button = Tab:CreateButton({
+  Name = "Золотой шейклайт",
+  Callback = function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/aadyian9000/the-thing/main/GoldenGummyFlashlight.lua"),true))() 
+    end,
 })
 local Button = Tab:CreateButton({
 Name = "Банка воды",
@@ -86,6 +83,23 @@ Name = "Черная дыра",
     loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Black%20Hole.lua"))() 
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "Банка красной жижи",
+   Callback = function()
+    loadstring(game:HttpGet('https://gist.githubusercontent.com/IdkMyNameLoll/8b05c837bea9effac2554340465b4be1/raw/3f3be0ee72e7f153db39a16a40fa63dce6cde72d/SpiralBottle'))() 
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "бесконечный крест, жми q на клаве чтобы юзать",
+   Callback = function()
+    _G.Uses = 414141414141
+_G.Range = 30
+_G.OnAnything = true
+_G.Fail = false
+_G.Variant = "Electric"
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
+   end,
+})
 local Tab = Window:CreateTab("Монстры",13143005702)
 local Button = Tab:CreateButton({
    Name = "Заспавни Пандениона",
@@ -93,14 +107,27 @@ local Button = Tab:CreateButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/DripCapybara/Doors-Mode-Remakes/refs/heads/main/PandemoniumProtected.lua"))()  
    end,
 })
-local Tab = Window:CreateTab("Читы",4483362458)
+local Tab = Window:CreateTab("Читы",17084915860)
 local Button = Tab:CreateButton({
    Name = "Мс паинт v3 (не обновляется)",
    Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()
    end,
 })
-local Tab = Window:CreateTab("Моды",4483362458)
+local Button = Tab:CreateButton({
+  Name = "Морфы (рекомендую врубать на ПК)",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))() 
+    end,
+})
+local Tab = Window:CreateTab("Читы 2",17084915860)
+local Button = Tab:CreateButton({
+Name = "полное освещения",
+   Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/SCRIPTINGER/LIE1-HUB/refs/heads/main/Scripts/FullBright/false'))() 
+   end,
+})
+local Tab = Window:CreateTab("Моды",14168652350)
 local Button = Tab:CreateButton({
 Name = "Жуткий мод",
    Callback = function()

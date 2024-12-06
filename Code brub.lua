@@ -1,11 +1,21 @@
-print("Сделано от T1 и SKWERKIN")
+---====== Load achievement giver ======---
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+---====== Display achievement ======---
+achievementGiver({
+    Title = "Приветик!",
+    Desc = "Это T1 hub!",
+    Reason = "Запустить T1 hub",
+    Image = "129826331604126"
+})
+
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "T1 hub / Первый русский скрипт",
    Icon = 129826331604126, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "Загрузка",
    LoadingSubtitle = "T1",
-   Theme = "Bloom", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+   Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    DisableRayfieldPrompts = false,
    DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
@@ -24,12 +34,12 @@ local Window = Rayfield:CreateWindow({
 
    KeySystem = false, -- Set this to true to use our key system
    KeySettings = {
-      Title = "Untitled",
+      Title = "Введите свой ключ",
       Subtitle = "Key System",
       Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
-      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      FileName = "ключ", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
-      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
       Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
@@ -52,7 +62,6 @@ local Button = Tab:CreateButton({
     loadstring(game:HttpGet("https://pastebin.com/raw/HT8jgqAY"))()
    end,
 })
-
 local Button = Tab:CreateButton({
   Name = "Золотой шейклайт",
   Callback = function()
@@ -100,11 +109,29 @@ _G.Variant = "Electric"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "Глитчнутый сканер",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/Doors/refs/heads/main/Glitched%20Scanner%20by%20Custom%20Doors"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Розовый сканер (его использет Kardin)",
+   Callback = function()
+    loadstring(Game:HttpGet("https://raw.githubusercontent.com/yieviro92creepy/WeirdPinktablet/main/sigma"))()-- The function that takes place when the button is pressed
+   end,
+})
 local Tab = Window:CreateTab("Монстры",13143005702)
 local Button = Tab:CreateButton({
    Name = "Заспавни Пандениона",
    Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/DripCapybara/Doors-Mode-Remakes/refs/heads/main/PandemoniumProtected.lua"))()  
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "A60",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Idk-lol2/a-60aa/refs/heads/main/---%3D%3D%3D%3D%3D%3D%20a-60%20agresiv%20spawner%20%3D%3D%3D%3D%3D%3D---.txt"))()-- The function that takes place when the button is pressed
    end,
 })
 local Tab = Window:CreateTab("Читы",17084915860)
@@ -117,7 +144,7 @@ local Button = Tab:CreateButton({
 local Button = Tab:CreateButton({
   Name = "Морфы (рекомендую врубать на ПК)",
   Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))() 
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))() 
     end,
 })
 local Tab = Window:CreateTab("Читы 2",17084915860)
@@ -138,5 +165,30 @@ local Button = Tab:CreateButton({
 Name = "Хард мод +5 монстров",
    Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/DripCapybara/Doors-Mode-Remakes/refs/heads/main/HardcoreFixed.lua"))() 
+   end,
+})
+local Button = Tab:CreateButton({
+  Name = "ржавый отель",
+  Callback = function()
+    loadstring(game:HttpGet("https://gist.githubusercontent.com/T0mix1608/ff0a607a510996f361c230a2de85f9e8/raw/7096f3796a8feb208b6c0b9029686150e878b7a1/gistfile1.txt", true))() 
+    end    
+   })
+local Button = Tab:CreateButton({
+   Name = "Графика 2017 года",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Idk-lol2/2017mode/refs/heads/main/2017MODEtxt.txt"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Tab = Window:CreateTab("Крутые фичи",4483362458)
+local Button = Tab:CreateButton({
+   Name = "Синий портал (не работает на телефонах",
+   Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/HT8jgqAY"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Revive защита двери",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/Doors/refs/heads/main/Revivelight%20Door%20protection%20BY%20CUSTOM%20DOORS"))()-- The function that takes place when the button is pressed
    end,
 })

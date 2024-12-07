@@ -138,7 +138,7 @@ local Button = Tab:CreateButton({
 })
 local Tab = Window:CreateTab("Читы 2",17084915860)
 local Button = Tab:CreateButton({
-Name = "полное освещения",
+Name = "полное освещениe",
    Callback = function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/SCRIPTINGER/LIE1-HUB/refs/heads/main/Scripts/FullBright/false'))() 
    end,

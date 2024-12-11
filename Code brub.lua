@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
-   Name = "T1 hub / Первый русский скрипт",
-   Icon = 129826331604126, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   Name = "T1 hub / Doors",
+   Icon = codesandbox, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "Загрузка",
    LoadingSubtitle = "T1",
    Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
@@ -36,7 +36,7 @@ Rayfield:Notify({
    Title = "Предупреждение",
    Content = "Все скрипты были взяты из Legit mods offical discord! Даня не убивай меня :(",
    Duration = 6.5,
-   Image = 4483362458,
+   Image = "triangle-alert",
 })
 local Tab = Window:CreateTab("предметы",12771221110) -- Title, Image
 local Button = Tab:CreateButton({
@@ -110,6 +110,32 @@ local Button = Tab:CreateButton({
     loadstring(Game:HttpGet("https://raw.githubusercontent.com/yieviro92creepy/WeirdPinktablet/main/sigma"))()-- The function that takes place when the button is pressed
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "Супер бомба",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CatEnddroid/Subs-Space-Tripmine/refs/heads/main/SubspacesTripmine.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Игрушка Сик",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CatEnddroid/Seek-Plushie/refs/heads/main/SeekPlushie.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Путеводный сканер",
+   Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/iBBqfYzn"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "1000 фпс сканер",
+   Callback = function()
+    _G.scanner_fps = 1000
+              _G.disable_static = false
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/Scanner.lua"))()
+   end,
+})
 local Tab = Window:CreateTab("Монстры",13143005702)
 local Button = Tab:CreateButton({
    Name = "Заспавни Пандениона",
@@ -136,11 +162,40 @@ local Button = Tab:CreateButton({
    loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))() 
     end,
 })
+local Button = Tab:CreateButton({
+   Name = "Helor hub (От SCRIPTINGER)",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SCRIPTINGER/REMASTERED/refs/heads/main/KEY%20SYSTEM.LUA"))()
+   end,
+})
 local Tab = Window:CreateTab("Читы 2",17084915860)
 local Button = Tab:CreateButton({
 Name = "полное освещениe",
    Callback = function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/SCRIPTINGER/LIE1-HUB/refs/heads/main/Scripts/FullBright/false'))() 
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Шейдеры от меня",
+   Callback = function()
+    local Bloom = Instance.new("BloomEffect", game.Lighting)
+Bloom.Intensity = 0.12
+Bloom.Size = 9e9
+Bloom.Threshold = 0.05
+local DepthOfField = Instance.new("DepthOfFieldEffect", game.Lighting)
+DepthOfField.FarIntensity = 0.3
+DepthOfField.FocusDistance = 20
+DepthOfField.InFocusRadius = 0
+DepthOfField.NearIntensity = 0
+local SunRays = Instance.new("SunRaysEffect", game.Lighting)
+SunRays.Intensity = 0.1
+SunRays.Spread = 0.8
+local ColorCorrection = Instance.new("ColorCorrectionEffect", game.Lighting)
+ColorCorrection.Brightness = 0.025
+ColorCorrection.Contrast = 0.13
+ColorCorrection.Saturation = 0.15
+game.Lighting.GlobalShadows = false
+game.Lighting.OutdoorAmbient = Color3.fromRGB(35, 35, 45)-- The function that takes place when the button is pressed
    end,
 })
 local Tab = Window:CreateTab("Моды",14168652350)
@@ -181,6 +236,86 @@ local Button = Tab:CreateButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/Doors/refs/heads/main/Revivelight%20Door%20protection%20BY%20CUSTOM%20DOORS"))()-- The function that takes place when the button is pressed
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "Желтый портал",
+   Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/HT8jgqAY"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Tab = Window:CreateTab("Бейджики",4483362458)
+local Button = Tab:CreateButton({
+   Name = "A-5000",
+   Callback = function()
+    ---====== Load achievement giver ======---
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+---====== Display achievement ======---
+achievementGiver({
+    Title = "А-5000",
+    Desc = "Мои ноги посинели...",
+    Reason = "Дойти до А-5000",
+    Image = "73046765001646"
+})
+   end,
+})
+local Tab = Window:CreateTab("От MrNeRD0 🫡",0)
+local Button = Tab:CreateButton({
+   Name = "Банано-пушка.lua",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/BananaGunByNerd.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Будь всем.lua",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/BeEverything.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Пушка-всего.lua",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/EverythingGunByNeRD.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Бессмертность-от-нерда.lua",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/GodModeByNerd.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Святая-граната.lua",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/HolyGrenadeByNerd.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Ледяная-пушка.lua",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/IcegunByNerd.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Бесконечные-витаминки.lua",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/Inf_Vitamins.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Магнит-от-нерда.lua",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/MagnetByNerd.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Изменение-размера-от-нерда.lua",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/SizeChangerByNerd.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Tab = Window:CreateTab("Создатели и тд.",4483362458)
+local Paragraph = Tab:CreateParagraph({Title = "Создатели", Content = "T1 и SCRIPTINGER"})
+local Paragraph = Tab:CreateParagraph({Title = "Телеграм", Content = "https://t.me/T1hubb"})
 
 ---====== Load achievement giver ======---
 local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()

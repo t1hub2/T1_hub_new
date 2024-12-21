@@ -25,11 +25,11 @@ local Window = Rayfield:CreateWindow({
    KeySettings = {
       Title = "Введите свой ключ",
       Subtitle = "Ключевая система",
-      Note = "Получите ключ в https://link-target.net/1267765/t1hubkeyget", -- Use this to tell the user how to get a key
+      Note = "получите через бота @T1HubKeySystemBot", -- Use this to tell the user how to get a key
       FileName = "ключ", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
-      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = {"T1HUBKEYSET_284245599920"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+      GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"https://work.ink/1Xrx/m4wvdfac?__cf_chl_tk=XUA6Rx9sNZ0a2eq_CBX0HbYejkj4aZB_ypV9hGfBm5M-1734777908-1.0.1.1-zRKFSWIeqo9GIF9EudPzYYnA_q4Rh7yX2L6NreDUoZE"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
 Rayfield:Notify({

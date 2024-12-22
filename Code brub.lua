@@ -254,7 +254,7 @@ achievementGiver({
     Title = "А-5000",
     Desc = "Мои ноги посинели...",
     Reason = "Дойти до А-5000",
-    Image = "73046765001646"
+    Image = "rbxassetid://73046765001646"
 })
    end,
 })
@@ -325,5 +325,5 @@ achievementGiver({
     Title = "Приветик!",
     Desc = "Это T1 hub!",
     Reason = "Запустить T1 hub",
-    Image = "129826331604126"
+    Image = "rbxassetid://129826331604126"
 })

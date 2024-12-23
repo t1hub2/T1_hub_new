@@ -31,7 +31,7 @@ local currentGameId = game.PlaceId
 -- Check if the current game ID matches the target game ID
 if currentGameId == targetGameId then
     -- If the game ID matches, perform the desired action
-    print("The Game ID matches! Performing the function...")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/t1hub2/Brub/refs/heads/main/Code%20brub.lua"))()
     
     -- Define your function here
     local function performAction()

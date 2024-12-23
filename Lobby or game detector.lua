@@ -1,42 +1,23 @@
--- Define the target game ID
-local targetGameId = 6516141723 -- Replace this with the actual game ID you want to check
+-- Define the target game IDs
+local targetGameId1 = 6516141723 -- Replace this with the actual game ID you want to check
+local targetGameId2 = 6839171747 -- Replace this with the actual game ID you want to check
 
 -- Get the current game's ID
 local currentGameId = game.PlaceId
 
--- Check if the current game ID matches the target game ID
-if currentGameId == targetGameId then
-    -- If the game ID matches, perform the desired action
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/t1hub2/Brub/refs/heads/main/Codelobby.lua"))()
-    
-    -- Define your function here
-    local function performAction()
-        -- Your code here
-        print("Action performed!")
-    end
+-- Function to perform the action
+local function performAction(actionUrl)
+    -- Load and execute the code from the provided URL
+    loadstring(game:HttpGet(actionUrl))()
+    -- Print a message to confirm the action
+    print("Action performed!")
+end
 
-    -- Call the function
-    performAction()
-else
-    -- If the game ID does not match, do something else or nothing
-local targetGameId = 6839171747 -- Replace this with the actual game ID you want to check
-
--- Get the current game's ID
-local currentGameId = game.PlaceId
-
--- Check if the current game ID matches the target game ID
-if currentGameId == targetGameId then
-    -- If the game ID matches, perform the desired action
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/t1hub2/Brub/refs/heads/main/Code%20brub.lua"))()
-    
-    -- Define your function here
-    local function performAction()
-        -- Your code here
-        print("Action performed!")
-    end
-
-    -- Call the function
-    performAction()
+-- Check if the current game ID matches any of the target game IDs
+if currentGameId == targetGameId1 then
+    performAction("https://raw.githubusercontent.com/t1hub2/Brub/refs/heads/main/Codelobby.lua")
+elseif currentGameId == targetGameId2 then
+    performAction("https://raw.githubusercontent.com/t1hub2/Brub/refs/heads/main/Code%20brub.lua")
 else
     -- If the game ID does not match, do something else or nothing
     print("The Game ID does not match. No action taken.")

@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
-   Name = "T1 hub / Doors",
-   Icon = codesandbox, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   Name = "T1 hub / Doors [FLOOR 1]",
+   Icon = "codesandbox" , -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "Загрузка",
    LoadingSubtitle = "T1",
    Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes

@@ -16,8 +16,8 @@ end
 -- Function to notify the player
 local function notifyPlayer(message)
     game.StarterGui:SetCore("SendNotification", {
-        Title = "Чекаем",
-        Text = 🤔,
+        Title = "Чеккк",
+        Text = "🤔",
         Duration = 5
     })
 end

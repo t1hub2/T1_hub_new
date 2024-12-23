@@ -14,10 +14,10 @@ local function performAction(actionUrl)
 end
 
 -- Function to notify the player
-local function notifyPlayer(title, message)
+local function notifyPlayer(message)
     game.StarterGui:SetCore("SendNotification", {
-        Title = title,
-        Text = message,
+        Title = "Чеккк",
+        Text = "🤔",
         Duration = 5
     })
 end
@@ -29,5 +29,5 @@ elseif currentGameId == targetGameId2 then
     performAction("https://raw.githubusercontent.com/t1hub2/Brub/refs/heads/main/Code%20brub.lua")
 else
     -- If the game ID does not match, notify the player
-    notifyPlayer("Єта не дорс", "🤨")
+    notifyPlayer("Єта не дорс🤨")
 end

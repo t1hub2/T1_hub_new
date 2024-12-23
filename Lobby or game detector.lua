@@ -13,12 +13,21 @@ local function performAction(actionUrl)
     print("Action performed!")
 end
 
+-- Function to notify the player
+local function notifyPlayer(message)
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Чекаем",
+        Text = 🤔,
+        Duration = 5
+    })
+end
+
 -- Check if the current game ID matches any of the target game IDs
 if currentGameId == targetGameId1 then
     performAction("https://raw.githubusercontent.com/t1hub2/Brub/refs/heads/main/Codelobby.lua")
 elseif currentGameId == targetGameId2 then
     performAction("https://raw.githubusercontent.com/t1hub2/Brub/refs/heads/main/Code%20brub.lua")
 else
-    -- If the game ID does not match, do something else or nothing
-    print("The Game ID does not match. No action taken.")
+    -- If the game ID does not match, notify the player
+    notifyPlayer("Єта не дорс🤨")
 end

@@ -38,7 +38,7 @@ Rayfield:Notify({
    Duration = 6.5,
    Image = "triangle-alert",
 })
-local Tab = Window:CreateTab("предметы",rbxassetid://12771221110) -- Title, Image
+local Tab = Window:CreateTab("предметы",12771221110) -- Title, Image
 local Button = Tab:CreateButton({
   Name = "Банка Мочи",
   Callback = function()
@@ -136,7 +136,7 @@ local Button = Tab:CreateButton({
               loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/Scanner.lua"))()
    end,
 })
-local Tab = Window:CreateTab("Монстры",rbxassetid://13143005702)
+local Tab = Window:CreateTab("Монстры",13143005702)
 local Button = Tab:CreateButton({
    Name = "Заспавни Пандениона",
    Callback = function()
@@ -149,7 +149,7 @@ local Button = Tab:CreateButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Idk-lol2/a-60aa/refs/heads/main/---%3D%3D%3D%3D%3D%3D%20a-60%20agresiv%20spawner%20%3D%3D%3D%3D%3D%3D---.txt"))()-- The function that takes place when the button is pressed
    end,
 })
-local Tab = Window:CreateTab("Читы",rbxassetid://17084915860)
+local Tab = Window:CreateTab("Читы",17084915860)
 local Button = Tab:CreateButton({
    Name = "Мс паинт v3 (не обновляется)",
    Callback = function()
@@ -168,7 +168,7 @@ local Button = Tab:CreateButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/SCRIPTINGER/REMASTERED/refs/heads/main/KEY%20SYSTEM.LUA"))()
    end,
 })
-local Tab = Window:CreateTab("Читы 2",rbxassetid://17084915860)
+local Tab = Window:CreateTab("Читы 2",17084915860)
 local Button = Tab:CreateButton({
 Name = "полное освещениe",
    Callback = function()
@@ -198,7 +198,7 @@ game.Lighting.GlobalShadows = false
 game.Lighting.OutdoorAmbient = Color3.fromRGB(35, 35, 45)-- The function that takes place when the button is pressed
    end,
 })
-local Tab = Window:CreateTab("Моды",rbxassetid://14168652350)
+local Tab = Window:CreateTab("Моды",14168652350)
 local Button = Tab:CreateButton({
 Name = "Жуткий мод",
    Callback = function()
@@ -242,7 +242,7 @@ local Button = Tab:CreateButton({
     loadstring(game:HttpGet("https://pastebin.com/raw/HT8jgqAY"))()-- The function that takes place when the button is pressed
    end,
 })
-local Tab = Window:CreateTab("Бейджики",rbxassetid://4483362458)
+local Tab = Window:CreateTab("Бейджики",4483362458)
 local Button = Tab:CreateButton({
    Name = "A-5000",
    Callback = function()

@@ -38,3 +38,19 @@ Rayfield:Notify({
    Duration = 6.5,
    Image = "triangle-alert",
 })
+local Tab = Window:CreateTab("зайти в",4483362458)
+local Button = Tab:CreateButton({
+   Name = "лобби HOTEL-",
+   Callback = function()
+    -- Define the target place ID
+local targetPlaceId = 110258689672367
+
+-- Function to teleport the player to the target place
+local function joinPlace()
+    game:GetService("TeleportService"):Teleport(targetPlaceId)
+end
+
+-- Call the function to join the place
+joinPlace()
+   end,
+})

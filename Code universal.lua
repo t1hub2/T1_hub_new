@@ -32,3 +32,4 @@ local Window = Rayfield:CreateWindow({
       Key = {"https://pastebin.com/raw/3H7DghFz"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
+local Tab = Window:CreateTab("фичи", "rewind")

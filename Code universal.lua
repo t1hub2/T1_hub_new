@@ -61,3 +61,9 @@ local WalkSpeedSlider = Tab:CreateSlider({
       game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
    end,
 })
+local Button = Tab:CreateButton({
+Name = "полное освещениe",
+   Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/SCRIPTINGER/LIE1-HUB/refs/heads/main/Scripts/FullBright/false'))() 
+   end,
+})

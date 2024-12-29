@@ -50,3 +50,14 @@ game.Workspace.CurrentCamera.CFrame = (game.Players.LocalPlayer.Character.Head.C
 end)
    end,
 })
+local WalkSpeedSlider = Tab:CreateSlider({
+   Name = "Скорость ходьбы",
+   Range = {16, 23}, -- Default Roblox walk speed is 16
+   Increment = 1,
+   Suffix = "Скорость",
+   CurrentValue = 16,
+   Flag = "Скорость",
+   Callback = function(Value)
+      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+   end,
+})

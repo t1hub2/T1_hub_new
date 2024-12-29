@@ -33,3 +33,20 @@ local Window = Rayfield:CreateWindow({
    }
 })
 local Tab = Window:CreateTab("фичи", "rewind")
+local Button = Tab:CreateButton({
+   Name = "Первое лицо",
+   Callback = function()
+    local sound = Instance.new("Sound", game.Workspace)
+sound.SoundId = "rbxassetid://8486683243"
+sound:Play()
+    Rayfield:Notify({
+   Title = "Примечание от Грасси:",
+   Content = "это может показаться бесполезным, но кого это волнует",
+   Duration = 6.5,
+   Image = "lightbulb",
+})
+    game:GetService("RunService").RenderStepped:Connect(function()
+game.Workspace.CurrentCamera.CFrame = (game.Players.LocalPlayer.Character.Head.CFrame)
+end)
+   end,
+})

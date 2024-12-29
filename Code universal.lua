@@ -56,7 +56,7 @@ local WalkSpeedSlider = Tab:CreateSlider({
    Increment = 1,
    Suffix = "Скорость",
    CurrentValue = 16,
-   Flag = "Скорость",
+   Flag = "Walkspeed",
    Callback = function(Value)
       game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
    end,

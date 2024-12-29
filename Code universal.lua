@@ -43,7 +43,7 @@ sound:Play()
    Title = "Примечание от Грасси:",
    Content = "это может показаться бесполезным, но кого это волнует",
    Duration = 6.5,
-   Image = "lightbulb",
+   Image = "notebook-pen",
 })
     game:GetService("RunService").RenderStepped:Connect(function()
 game.Workspace.CurrentCamera.CFrame = (game.Players.LocalPlayer.Character.Head.CFrame)

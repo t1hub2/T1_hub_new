@@ -52,7 +52,7 @@ end)
 })
 local WalkSpeedSlider = Tab:CreateSlider({
    Name = "Скорость ходьбы",
-   Range = {16, 23}, -- Default Roblox walk speed is 16
+   Range = {16, 50}, -- Default Roblox walk speed is 16
    Increment = 1,
    Suffix = "Скорость",
    CurrentValue = 16,

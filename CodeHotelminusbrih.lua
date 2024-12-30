@@ -38,3 +38,4 @@ Rayfield:Notify({
    Duration = 6.5,
    Image = "triangle-alert",
 })
+local Tab = Window:CreateTab("Pre-run shop", "shopping-cart")

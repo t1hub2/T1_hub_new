@@ -39,3 +39,22 @@ Rayfield:Notify({
    Image = "triangle-alert",
 })
 local Tab = Window:CreateTab("Pre-run shop", "shopping-cart")
+local Button = Tab:CreateButton({
+   Name = "Крест",
+   Callback = function()
+    -- Assuming you have a hidden TextLabel named "MyTextLabel"
+local textLabel = script.Parent:FindFirstChild("MyTextLabel")
+
+-- Function to make the TextLabel visible
+local function makeVisible()
+    if textLabel then
+        textLabel.Visible = true
+    else
+        warn("TextLabel 'MyTextLabel' not found!")
+    end
+end
+
+-- Call the function to make the TextLabel visible
+makeVisible()
+   end,
+})

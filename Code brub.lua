@@ -34,7 +34,7 @@ local Window = Rayfield:CreateWindow({
 })
 Rayfield:Notify({
    Title = "Предупреждение",
-   Content = "Все скрипты были взяты из Legit mods offical discord! Даня не убивай меня :(",
+   Content = "Все скрипты были взяты из Legit MODS! Даня не убивай меня :(",
    Duration = 6.5,
    Image = "triangle-alert",
 })
@@ -44,12 +44,6 @@ local Button = Tab:CreateButton({
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/refs/heads/main/StarJug.lua"))() 
     end,
-})
-local Button = Tab:CreateButton({
-   Name = "Синий портал (не работает на телефонах",
-   Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/HT8jgqAY"))()
-   end,
 })
 local Button = Tab:CreateButton({
   Name = "Золотой шейклайт",
@@ -136,6 +130,38 @@ local Button = Tab:CreateButton({
               loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/Scanner.lua"))()
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "СВЯТОЙ КРЕСТ",
+   Callback = function()
+    ---====== Load module ======---
+      local module = loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew201322/Doors-Scriptee/refs/heads/main/Crucifix%20Source.lua"))()
+
+      ---====== Create crucifix ======---
+      module.GiveCrucifix({
+         Type = 1, -- Crucifix type (1 = Guiding Light)
+         Uses = nil, -- nil for infinite uses
+         Resist = false, -- If true, can resist certain entities
+         EntitiesOnly = true, -- If true, works only on custom entities
+         IgnoreList = {} -- List of entities to ignore
+      })
+
+      --[[
+
+      CRUCIFIX TYPES:
+      -> 1: Guiding Light
+
+      COMING SOON:
+      -> Curious Light crucifix type
+
+      ]]--
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Земленой сканер",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew201322/Doors-Scriptee/refs/heads/main/grass%20tablet.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
 local Tab = Window:CreateTab("Монстры",13143005702)
 local Button = Tab:CreateButton({
    Name = "Заспавни Пандениона",
@@ -147,6 +173,49 @@ local Button = Tab:CreateButton({
    Name = "A60",
    Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Idk-lol2/a-60aa/refs/heads/main/---%3D%3D%3D%3D%3D%3D%20a-60%20agresiv%20spawner%20%3D%3D%3D%3D%3D%3D---.txt"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "грамбл",
+   Callback = function()
+    local sound = Instance.new("Sound", game.Workspace)
+sound.SoundId = "rbxassetid://8486683243"
+sound:Play()
+    Rayfield:Notify({
+   Title = "Подсказка!",
+   Content = "Q для спавна",
+   Duration = 6.5,
+   Image = "lightbulb",
+})
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/adadasdada/refs/heads/main/Grumble"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Дозер",
+   Callback = function()
+    local sound = Instance.new("Sound", game.Workspace)
+sound.SoundId = "rbxassetid://8486683243"
+sound:Play()
+    Rayfield:Notify({
+   Title = "Подсказка!",
+   Content = "Он спввнится автоматически!",
+   Duration = 6.5,
+   Image = "lightbulb",
+})
+    _G.dozerSpawnerSettings = {
+    dozerSpawnCD = 1,
+    ticksBeforeChecking = 10,
+    tomorrowTexts = 10,
+    SpawnerSettings = {
+        SpawnByUser = false, --set to true if you want to spawn Dozer
+        SpawnKeybind = Enum.KeyCode.Z,
+        SpawnRandomSettings = {
+            MathRandomSpawn1 = 10,
+            MathRandomSpawn2 = 15
+        }
+    }
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IdkMyNameLoll/34921473024732147312483297412/refs/heads/main/dozerspawner"))()
    end,
 })
 local Tab = Window:CreateTab("Читы",17084915860)
@@ -198,6 +267,31 @@ game.Lighting.GlobalShadows = false
 game.Lighting.OutdoorAmbient = Color3.fromRGB(35, 35, 45)-- The function that takes place when the button is pressed
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "Esp Раша амбуша дюпа глаз фигуры и двери",
+   Callback = function()
+    local function highlightObject(objectName, color)
+    local object = game.Workspace:FindFirstChild(objectName)
+    if object then
+        local highlight = Instance.new("Highlight")
+        highlight.Adornee = object
+        highlight.FillColor = color
+        highlight.Parent = object
+    end
+end
+-- Red highlights
+local redColor = Color3.new(1, 0, 0)
+highlightObject("AmbushMoving", redColor)
+highlightObject("RushMoving", redColor)
+highlightObject("DoorFake", redColor)
+highlightObject("Eyes", redColor)
+highlightObject("FigureRig", redColor)
+
+-- Blue highlights
+local blueColor = Color3.new(0, 0, 1)
+highlightObject("Door", blueColor)
+   end,
+})
 local Tab = Window:CreateTab("Моды",14168652350)
 local Button = Tab:CreateButton({
 Name = "Жуткий мод",
@@ -223,6 +317,18 @@ local Button = Tab:CreateButton({
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Idk-lol2/2017mode/refs/heads/main/2017MODEtxt.txt"))()-- The function that takes place when the button is pressed
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "Электричный отель",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Teilsthebfdifan/Guiding-modhub/refs/heads/main/ElectricalHotelV3.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Взрыво-отель",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Teilsthebfdifan/Guiding-modhub/refs/heads/main/ExplodingHotel.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
 local Tab = Window:CreateTab("Крутые фичи",4483362458)
 local Button = Tab:CreateButton({
    Name = "Синий портал (не работает на телефонах",
@@ -240,6 +346,12 @@ local Button = Tab:CreateButton({
    Name = "Желтый портал",
    Callback = function()
     loadstring(game:HttpGet("https://pastebin.com/raw/HT8jgqAY"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Виридис рифт",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/Doors/refs/heads/main/VIRIDIS%20RIFT%20ORIGINAL"))()-- The function that takes place when the button is pressed
    end,
 })
 local Tab = Window:CreateTab("Бейджики",4483362458)
@@ -312,10 +424,27 @@ local Button = Tab:CreateButton({
    Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/SizeChangerByNerd.lua"))()-- The function that takes place when the button is pressed
    end,
-})
+})    
 local Tab = Window:CreateTab("Создатели и тд.",4483362458)
 local Paragraph = Tab:CreateParagraph({Title = "Создатели", Content = "T1 и SCRIPTINGER"})
 local Paragraph = Tab:CreateParagraph({Title = "Телеграм", Content = "https://t.me/T1hubb"})
+local Paragraph = Tab:CreateParagraph({Title = "Наш сайт (часто не работает)", Content = "https://49eff2e2-7363-4a4d-b446-da965aba3be7-00-2ffaxarc4up04.sisko.replit.dev/home/"})
+local Button = Tab:CreateButton({
+   Name = "Копировать ссылку на тг канал",
+   Callback = function()
+    setclipboard("https://t.me/T1hubb")
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Копирывать ссылку на Сайт",
+   Callback = function()
+    setclipboard("https://49eff2e2-7363-4a4d-b446-da965aba3be7-00-2ffaxarc4up04.sisko.replit.dev/home/")
+      end,
+})
+
+local sound = Instance.new("Sound", game.Workspace)
+sound.SoundId = "rbxassetid://8503531171"
+sound:Play()
 
 ---====== Load achievement giver ======---
 local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()

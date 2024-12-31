@@ -44,7 +44,6 @@ local Button = Tab:CreateButton({
    Callback = function()
     -- Assuming you have a hidden TextLabel named "MyTextLabel"
 local textLabel = script.Parent:FindFirstChild("MyTextLabel")
-
 -- Function to make the TextLabel visible
 local function makeVisible()
     if textLabel then
@@ -53,7 +52,6 @@ local function makeVisible()
         warn("TextLabel 'MyTextLabel' not found!")
     end
 end
-
 -- Call the function to make the TextLabel visible
 makeVisible()
    end,

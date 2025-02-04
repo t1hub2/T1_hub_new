@@ -359,3 +359,10 @@ while tpwalking and hb:Wait() and chr and hum and hum.Parent do
    end
    end,
 })
+local Section = Tab:CreateSection("Фейковые персы")
+local Button = Tab:CreateButton({
+   Name = "Скибиди хуйня",
+   Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/tUDRcKB8"))()-- The function that takes place when the button is pressed
+   end,
+})

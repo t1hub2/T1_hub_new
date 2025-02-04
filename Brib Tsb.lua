@@ -155,3 +155,5 @@ playAnim2:Play()
 
    end,
 })
+local Tab = Window:CreateTab("Ульта",4483362458)
+local Label = Tab:CreateLabel("Ульты", 129089434079562, Color3.fromRGB(145, 16, 16), false)

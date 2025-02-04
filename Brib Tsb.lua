@@ -208,3 +208,40 @@ playAnim:Play()
          
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "Соник",
+   Callback = function()
+    local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://13499771836"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+wait(2.3)
+game.Players.LocalPlayer.Character.Head.Transparency = 1
+game.Players.LocalPlayer.Character.Torso.Transparency = 1
+game.Players.LocalPlayer.Character["Left Arm"].Transparency = 1
+game.Players.LocalPlayer.Character["Right Arm"].Transparency = 1
+game.Players.LocalPlayer.Character["Left Leg"].Transparency = 1
+game.Players.LocalPlayer.Character["Right Leg"].Transparency = 1
+game.Players.LocalPlayer.Character.Head.face.Transparency = 1
+wait(2)
+game.Players.LocalPlayer.Character.Head.Transparency = 0
+game.Players.LocalPlayer.Character.Torso.Transparency = 0
+game.Players.LocalPlayer.Character["Left Arm"].Transparency = 0
+game.Players.LocalPlayer.Character["Right Arm"].Transparency = 0
+game.Players.LocalPlayer.Character["Left Leg"].Transparency = 0
+game.Players.LocalPlayer.Character["Right Leg"].Transparency = 0
+game.Players.LocalPlayer.Character.Head.face.Transparency = 0
+local anim2 = Instance.new("Animation")
+anim2.AnimationId = "rbxassetid://13497875049"
+
+local playAnim2 = humanoid:LoadAnimation(anim2)
+playAnim2:Play()
+   end,
+})

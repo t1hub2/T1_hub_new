@@ -33,7 +33,7 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local Tab = Window:CreateTab("Анимации спавна", 114502695759239) -- Tab title and image
+local Tab = Window:CreateTab("Анимации спавна", 84018918211093) -- Tab title and image
 local Button = Tab:CreateButton({
    Name = "Сильнейший Герой",
    Callback = function()

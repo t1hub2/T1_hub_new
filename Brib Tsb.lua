@@ -302,3 +302,10 @@ local Button = Tab:CreateButton({
     loadstring(game:HttpGet("https://pastebin.com/raw/QSQysq1J"))()
    end,
 })
+local Tab = Window:CreateTab("хуйня какаято",4483362458)
+local Button = Tab:CreateButton({
+   Name = "Черная вспышка",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/kMZJF27h"))()-- The function that takes place when the button is pressed
+   end,
+})

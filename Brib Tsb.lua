@@ -351,12 +351,6 @@ while tpwalking and hb:Wait() and chr and hum and hum.Parent do
     else
  
       chr:TranslateBy(hum.MoveDirection)
- 
-    end
- 
-  end
- 
-   end
    end,
 })
 local Section = Tab:CreateSection("Фейковые персы")

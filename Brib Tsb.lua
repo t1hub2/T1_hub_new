@@ -316,3 +316,46 @@ local Button = Tab:CreateButton({
    loadstring(game:HttpGet("https://pastebin.com/raw/4jVHNua4"))()-- The function that takes place when the button is pressed
    end,
 })
+local Section = Tab:CreateSection("Игрок")
+local Button = Tab:CreateButton({
+   Name = "буст скорости",
+   Callback = function()
+    return true
+ 
+  end
+ 
+end
+ 
+local tspeed = 0.3
+ 
+local hb = game:GetService("RunService").Heartbeat
+ 
+local tpwalking = true
+ 
+local player = game:GetService("Players")
+ 
+local lplr = player.LocalPlayer
+ 
+local chr = lplr.Character
+ 
+local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
+ 
+while tpwalking and hb:Wait() and chr and hum and hum.Parent do
+ 
+  if hum.MoveDirection.Magnitude > 0 then
+ 
+    if tspeed and isNumber(tspeed) then
+ 
+      chr:TranslateBy(hum.MoveDirection * tonumber(tspeed))
+ 
+    else
+ 
+      chr:TranslateBy(hum.MoveDirection)
+ 
+    end
+ 
+  end
+ 
+   end
+   end,
+})

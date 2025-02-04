@@ -156,7 +156,7 @@ playAnim2:Play()
    end,
 })
 local Tab = Window:CreateTab("Ульта",4483362458)
-local Label = Tab:CreateLabel("Ульты", 129089434079562, Color3.fromRGB(145, 16, 16), false)
+local Label = Tab:CreateLabel("Ульты", 105053222544471, Color3.fromRGB(0, 0, 0), false)
 local Button = Tab:CreateButton({
    Name = "Сильнейший Герой",
    Callback = function()

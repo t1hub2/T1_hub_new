@@ -309,3 +309,9 @@ local Button = Tab:CreateButton({
    loadstring(game:HttpGet("https://pastebin.com/raw/kMZJF27h"))()-- The function that takes place when the button is pressed
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "Черная вспышка аура",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/4jVHNua4"))()-- The function that takes place when the button is pressed
+   end,
+})

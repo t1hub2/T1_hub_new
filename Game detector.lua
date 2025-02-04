@@ -1,7 +1,7 @@
 -- Define the target game IDs and their corresponding URLs
 local gameActions = {
     [6516141723] = "https://raw.githubusercontent.com/t1hub2/T1_hub_new/refs/heads/main/Remake.lua",
-    [1234567890] = "https://example.com/script1.lua",
+    [6839171747] = "https://raw.githubusercontent.com/t1hub2/T1_hub_new/refs/heads/main/Remake.lua",
     [10449761463] = "https://raw.githubusercontent.com/t1hub2/T1_hub_new/refs/heads/main/Brib%20Tsb.lua"
 }
 

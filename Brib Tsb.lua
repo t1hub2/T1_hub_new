@@ -34,7 +34,7 @@ local Window = Rayfield:CreateWindow({
 })
 
 local Tab = Window:CreateTab("Анимации спавна", 84018918211093) -- Tab title and image
-local Label = Tab:CreateLabel("Здесь все стартовые анимки (Kj нету)", 129089434079562, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
+local Label = Tab:CreateLabel("Здесь все стартовые анимки (Kj нету)", 129089434079562, Color3.fromRGB(145, 16, 16), false) -- Title, Icon, Color, IgnoreTheme
 local Button = Tab:CreateButton({
    Name = "Сильнейший Герой",
    Callback = function()

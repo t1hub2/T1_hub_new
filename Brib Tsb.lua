@@ -303,6 +303,7 @@ local Button = Tab:CreateButton({
    end,
 })
 local Tab = Window:CreateTab("хуйня какаято",4483362458)
+local Section = Tab:CreateSection("Еффекты")
 local Button = Tab:CreateButton({
    Name = "Черная вспышка",
    Callback = function()

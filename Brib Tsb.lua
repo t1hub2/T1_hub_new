@@ -262,3 +262,20 @@ playAnim2:Play()
 
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "Блэйд мастер",
+   Callback = function()
+    local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://15391323441"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+         
+   end,
+})

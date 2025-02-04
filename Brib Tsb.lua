@@ -296,3 +296,9 @@ playAnim:Play()
 
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "KJ",
+   Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/QSQysq1J"))()
+   end,
+})

@@ -68,7 +68,6 @@ anim2.AnimationId = "rbxassetid://15957376722"
 local playAnim2 = humanoid:LoadAnimation(anim2)
 playAnim2:Play()
 
-
    end,
 })
 local Button = Tab:CreateButton({
@@ -86,6 +85,22 @@ anim2.AnimationId = "rbxassetid://15957374019"
 local playAnim2 = humanoid:LoadAnimation(anim2)
 playAnim2:Play()
 
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Соник",
+   Callback = function()
+    local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim2 = Instance.new("Animation")
+anim2.AnimationId = "rbxassetid://15957361339"
+
+local playAnim2 = humanoid:LoadAnimation(anim2)
+playAnim2:Play()
 
    end,
 })

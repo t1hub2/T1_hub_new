@@ -2,7 +2,7 @@
 local gameActions = {
     [6516141723] = "https://raw.githubusercontent.com/t1hub2/T1_hub_new/refs/heads/main/Remake.lua",
     [1234567890] = "https://example.com/script1.lua",
-    [9876543210] = "https://example.com/script2.lua"
+    [10449761463] = "https://raw.githubusercontent.com/t1hub2/T1_hub_new/refs/heads/main/Brib%20Tsb.lua"
 }
 
 -- Get the current game's ID

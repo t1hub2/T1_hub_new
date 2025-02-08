@@ -33,3 +33,20 @@ Players.PlayerAdded:Connect(onPlayerAdded)
 for _, player in pairs(Players:GetPlayers()) do
     onPlayerAdded(player)
 end
+
+local function getGitSoundId(GithubSoundPath: string, AssetName: string): Sound
+    local Url = GithubSoundPath
+
+    if not isfile(AssetName..".mp3") then 
+        writefile(AssetName..".mp3", game:HttpGet(Url)) 
+    end
+
+    local Sound = Instance.new("Sound")
+    Sound.SoundId = getcustomasset(AssetName..".mp3", true)
+    return Sound 
+end
+
+local CustomMusic = getGitSoundId("https://github.com/t1hub2/T1_hub_new/blob/main/lv_0_20250208075205.mp3", "ElectricalHotelV3")
+CustomMusic.Parent = game.SoundService
+CustomMusic.Looped = false
+CustomMusic:Play()

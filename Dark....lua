@@ -11,7 +11,7 @@ local function onPlayerAdded(player)
         humanoid.WalkSpeed = 8
         
         local sound = Instance.new("Sound")
-        sound.SoundId = "rbxassetid://<AudioAssetID>" 
+        sound.SoundId = "rbxassetid://https://github.com/t1hub2/T1_hub_new/blob/main/lv_0_20250208075205.mp3" 
         sound.Parent = character:WaitForChild("HumanoidRootPart")
         sound:Play()
     end)

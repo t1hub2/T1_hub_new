@@ -8,7 +8,12 @@ local Players = game:GetService("Players")
 local function onPlayerAdded(player)
     player.CharacterAdded:Connect(function(character)
         local humanoid = character:WaitForChild("Humanoid")
-        humanoid.WalkSpeed = 8 
+        humanoid.WalkSpeed = 8
+        
+        local sound = Instance.new("Sound")
+        sound.SoundId = "rbxassetid://<AudioAssetID>" 
+        sound.Parent = character:WaitForChild("HumanoidRootPart")
+        sound:Play()
     end)
 end
 

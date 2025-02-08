@@ -46,7 +46,7 @@ local function getGitSoundId(GithubSoundPath: string, AssetName: string): Sound
     return Sound 
 end
 
-local CustomMusic = getGitSoundId("https://github.com/t1hub2/T1_hub_new/blob/main/lv_0_20250208075205.mp3", "")
+local CustomMusic = getGitSoundId("https://github.com/t1hub2/T1_hub_new/blob/main/lv_0_20250208075205.mp3", "lv_0_20250208075205")
 CustomMusic.Parent = game.SoundService
 CustomMusic.Looped = false
 CustomMusic:Play()
